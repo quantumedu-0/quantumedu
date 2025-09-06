@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuantumEdu</title>
+  <link rel="stylesheet" href="static/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+<header>
+  <div class="logo">
+    <a href="index.html">QuantumEdu</a>
+  </div>
+  
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Start</a></li>
+      <li><a href="przedmioty/astronomia.html">Astronomia</a></li>
+      <li><a href="fizyka.html">Fizyka</a></li>
+      <li><a href="matematyka.html">Matematyka</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h2>Odkrywaj piękno natury i tajemnice nauki</h2>
+    <p>Przestrzeń do dzielenia się wiedzą, pasją i ciekawostkami ze świata przyrody i nauk ścisłych.</p>
+  </section>
+
+  <section class="grid">
+    <a href="przedmioty/astronomia.html" class="card-link">
+      <article>
+        <h3>Astronomia</h3>
+        <img src="img/ast.png" alt="Astronomia">
+      </article>
+    </a>
+
+    <a href="fizyka.html" class="card-link">
+      <article>
+        <h3>Fizyka</h3>
+        <img src="img/fiz.png" alt="Fizyka">
+      </article>
+    </a>
+
+    <a href="matematyka.html" class="card-link">
+      <article>
+        <h3>Matematyka</h3>
+        <img src="img/mat.png" alt="Matematyka">
+      </article>
+    </a>
+  </section>
+
+  <section class="hero">
+    <h2>Odkrywaj piękno natury i tajemnice nauki</h2>
+    <p>Przestrzeń do dzielenia się wiedzą, pasją i ciekawostkami ze świata przyrody i nauk ścisłych.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 QuantumEdu – Strona edukacyjna</p>
+</footer>
+
+<script>
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+  });
+</script>
+
+</body>
+</html>
